@@ -1,2 +1,4 @@
-package com.example.timerbackend.Timer;public class TimerDTO {
+package com.example.timerbackend.Timer;
+
+public record TimerDTO(Integer id, Integer time) {
 }

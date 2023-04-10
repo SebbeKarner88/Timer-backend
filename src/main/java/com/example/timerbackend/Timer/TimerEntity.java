@@ -1,5 +1,5 @@
-package com.example.timerbackend.TimerEntity;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+package com.example.timerbackend.Timer;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
