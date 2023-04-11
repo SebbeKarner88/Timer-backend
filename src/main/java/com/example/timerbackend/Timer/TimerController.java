@@ -1,4 +1,5 @@
 package com.example.timerbackend.Timer;
+import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -31,9 +32,9 @@ public class TimerController {
     }
 
     @CrossOrigin
-    @PostMapping("/del")
-    public Boolean DeleteTime(@RequestBody TimerDTO timerDTO) {
-        return timerService.DeleteTime(timerDTO.id());
+    @DeleteMapping("/del/{id}")
+    public Boolean DeleteTime(@PathVariable("id")Integer id) {
+        return timerService.DeleteTime(id);
     }
 
 
